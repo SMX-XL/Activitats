@@ -2,7 +2,11 @@
 
 ## Presentació de l'activitat
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. Ut in risus volutpat libero pharetra tempor. Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
+Un tècnic de xarxes no es limita a instal·lar cables i connectar aparells: cada xarxa local té unes necessitats pròpies (nombre d'equips, presència d'interferències, pressupost disponible, dispositius sense fil o amb PoE, etc.) i cal saber triar, en cada cas, el cablejat i els equips de xarxa més adequats.
+
+En aquesta activitat et posaràs en la pell d'aquest tècnic. A partir de diverses situacions properes a un entorn real, hauràs de decidir quin tipus de cable de parells trenats (U/UTP, F/UTP o S/FTP) i quins dispositius de xarxa (switch, switch amb PoE, router, punt d'accés o targeta de xarxa) són els més adients. També hauràs de revisar propostes d'altres companys per detectar-hi errors i justificar com els corregiries.
+
+L'objectiu és que consolidis els conceptes teòrics vistos a classe sobre elements de la xarxa local i que aprenguis a argumentar les teves decisions tècniques, una competència clau en qualsevol instal·lació o manteniment de xarxes.
 
 ### Durada de l'activitat
 
@@ -10,7 +14,9 @@ La durada prevista de l'activitat és 2 hores a classe.
 
 ### Objectius específics de l'activitat
 
-Escollir els elements d’una xarxa local segons les necessitats d’una situació concreta, justificar l’elecció i detectar errors en propostes de cablejat i equipament.
+- Escollir els elements d’una xarxa local segons les necessitats d’una situació concreta.
+
+- Justificar l’elecció i detectar errors en propostes de cablejat i equipament.
 
 ### Competències treballades
 
@@ -92,7 +98,48 @@ Escull el dispositiu més adequat en cada cas. Dispositius disponibles: switch, 
 
 ### Exercici 3. Detecta els errors
 
+El teu company de feina ha fet una proposta de cablejat i equipament per a una xarxa local. Detecta els errors que hi puguis trobar i justifica la teva resposta.
+
+1. Utilitzar cable U/UTP en una zona amb moltes interferències electromagnètiques.
+
+    - Quin és l'error?
+    - Com el corregiries?
+
+2. Fer servir un switch normal per connectar una càmera IP que necessita alimentació a través del cable de xarxa (PoE).
+
+    - Quin és l'error?
+    - Com el corregiries?
+
+3. Usar un router per connectar directament tots els ordinadors de la LAN.
+
+    - Quin és l'error?
+    - Com el corregiries?
+
+4. Comprar connectors RJ-45 pels cables de fibra òptica.
+
+    - Quin és l'error?
+    - Com el corregiries?
+
+5. Desplegar fibra multimode per a una connexió de molt llarga distància.
+
+    - Quin és l'error?
+    - Com el corregiries?
+
+### Exercici 4. Reflexions finals
+
+1. Raona si usar sempre el cable de coure més protegit, és una bona idea. Valora quins inconvenients pot tenir i quins avantatges.
+
+2. Justifica en quines situacions l'ús de la fibra òptica és més adequat que el cable de coure.
+
+3. Indica de forma clara les diferències entre un switch, un router i un punt d’accés (AP).
+
+4. Explica els avantatges i inconvenients de fer servir PoE (Power over Ethernet) en una xarxa local.
+
 ### Què cal lliurar, on i com?
+
+- Redacta un informe amb les respostes a tots els exercicis. L’informe ha de tenir una portada amb el nom de l’alumne, el curs i la data. Ha de ser clar, concís i ben estructurat. Utilitza imatges o esquemes si calen per a una millor comprensió.
+
+- Penja l'activitat en format PDF a la tasca corresponent del moodle del curs.
 
 ## Material de suport
 
