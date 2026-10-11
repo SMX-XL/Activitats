@@ -75,7 +75,7 @@ Ara anem a descriure quines són les zones i icones que faràs servir constantme
   - Copper Straight-Through (Cable directe, línia negra contínua): S'utilitza per connectar dispositius de diferent tipus (per exemple, un PC a un Switch).
   - Copper Cross-Over (Cable creuat, línia negra discontínua): S'utilitza per connectar dispositius del mateix tipus (per exemple, dos PC directament, dos Switches o dos Routers).
   - Fiber (Línia vermella): S'utilitza per a connexions de fibra òptica.
-  - Serial (línia vermella en zig-zag): S'utilitza per a connexions sèrie entre routers.
+  - Serial (línia vermella en zig-zag): S'utilitza per a connexions sèrie entre routers que veurem més endavant.
   - Console (línia blava): S'utilitza per a la connexió directa a un dispositiu per a configuració i gestió. Permet simular la configuració d'un switch o router tal com es fa a la a realitat a través del terminal d'un ordinador.
 
 - **Mode Temps Real / Mode Simulació** (Cantonada inferior dreta):
