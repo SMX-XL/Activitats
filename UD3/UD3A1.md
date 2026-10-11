@@ -6,15 +6,16 @@ Què és Cisco Packet Tracer? Imagina que és com un "Minecraft" o un "SimCity" 
 
 En aquesta primera sessió de laboratori faràs el teu primer "desplegament". Construiràs una xarxa local (LAN) bàsica formada per dos ordinadors connectats mitjançant un commutador (Switch). L'objectiu és que perdis la por al programari, aprenguis a moure't per la seva interfície, assignis les primeres adreces IP i comprovis que els equips es comuniquen correctament fent servir la comanda ping i el mode de simulació visual.
 
+A continuació, veuràs les diferències de funcionament entre un hub (concentrador) i un switch (commutador), observant el fenòmen de les col·lisions i entenent perquè actualment, les xarxes Ethernet utilitzen commutadors en lloc de concentradors. Així mateix, observaràs el format de les trames Ethernet i com es transmeten a través del cablejat.
+
 ### Durada de l'activitat
 
-La durada prevista de l'activitat és 2 hores a classe.
+La durada prevista de l'activitat és 4 hores a classe.
 
 ### Objectius específics de l'activitat
 
-- Objectiu 1
-- Objectiu 2
-- Objectiu 3
+- Dissenyar i simular xarxes locals senzilles identificant els dispositius i el cablejat necessaris.
+- Comprovar el funcionament de la xarxa simulada analitzant la connectivitat entre equips.
 
 ### Competències treballades
 
@@ -99,6 +100,7 @@ Ara anem a descriure quines són les zones i icones que faràs servir constantme
     - Connecta PC0 (port FastEthernet0) al Switch0 (port FastEthernet0/1).
     - Repeteix l'operació per connectar PC1 (port FastEthernet0) al Switch0 (port FastEthernet0/2).
     - Espera uns segons fins que els punts de connexió es tornin de color verd.
+    ![Connection Result](./img/pt01.png)
 
 3. Configurar les adreces IP dels equips:
     - Fes clic sobre PC0, ves a la pestanya Desktop > IP Configuration.
@@ -106,19 +108,72 @@ Ara anem a descriure quines són les zones i icones que faràs servir constantme
         - IP Address: 192.168.1.10
         - Subnet Mask: 255.255.255.0
     - Repeteix el procés per a PC1 assignant-li la IP 192.168.1.20 i la màscara 255.255.255.0.
+    ![IP Configuration Result](./img/pt-ip.png)
 
 4. Comprovar la connectivitat en Temps Real (ping):
     - Fes clic sobre PC0 i obre la finestra Desktop > Command Prompt.
     - Escriu la comanda ping 192.168.1.20 i prem Enter.
     - Comprova que s'obtenen respostes correctament sense pèrdua de paquets (0% loss).
+    ![Ping Result](./img/pt02.png)
 
 5. Visualitzar el viatge dels paquets en Mode Simulació:
     - Canvia al mode Simulation a la cantonada inferior dreta.
     - Selecciona l'eina del sobre tancat (Add Simple PDU), fes clic sobre PC0 (origen) i després sobre PC1 (destí).
     - Prem el botó Auto Capture / Play per veure com l'envolupant es mou a través del Switch.
+    ![Simulation Result](./img/pt03.png)
 
-### Activitat 2. Entenent protocol Ethernet
+6. Guardar la simulació:
+    - Ves al menú File > Save As i desa el fitxer amb el nom `UD3A1act1-<NomCognoms>.pkt` al teu ordinador.
 
+### Activitat 2. Hub vs Switch
+
+1. Fes `New` per crear un nou projecte.
+
+2. Afegeix 4 ordinadors (PC0, PC1, PC2 i PC3) i un Hub Generic (Hub-PT) a l'àrea de treball. Connecta els ordinadors al Hub amb cables directes (Copper Straight-Through).
+
+3. Configura les adreces IP dels ordinadors de la següent manera: 192.168.x.1, 192.168.x.2, 192.168.x.3 i 192.168.x.4 amb màscara 255.255.255.0 (on substitueix la x pel teu número de llista).
+
+4. Fes un proves de connectivitat en temps real tots els ordinadors fent ping entre ells. Observa que tots els paquets arriben correctament.
+
+5. Canvia al mode `Simulation` i envia un paquet des de PC0 a PC1. Observa com el paquet es transmet a tots els ordinadors connectats al Hub.
+
+6. Per provocar una **col·lisió**, seguint en mode `Simulation`, envia un paquet des de PC2 a PC3 i un altre des de PC0 a PC1. Envia els paquets i observa com es produeix la col·lisió.
+
+7. Clica sobre el paquet que ha col·lisionat i observa el missatge que apareix a la finestra de detalls. Fes clic a `Collision` i llegeix la informació que s'hi mostra.
+
+8. Torna a `Realtime` i al costat, afegeix quatre ordinadors més (PC4, PC5, PC6 i PC7) i un Switch 2960. Connecta els ordinadors al Switch amb cables directes (Copper Straight-Through).
+
+9. Configura les adreces IP dels ordinadors de la següent manera: 192.168.x.10, 192.168.x.20, 192.168.x.30 i 192.168.x.40 amb màscara 255.255.255.0 (on substitueix la x pel teu número de llista).
+
+10. Fes un proves de connectivitat en temps real tots els ordinadors fent ping entre ells. Observa que tots els paquets arriben correctament.
+
+11. Canvia al mode `Simulation` i envia un paquet des de PC4 a PC5. Observa com el paquet només es transmet a l'ordinador de destí.
+
+12. Intenta provocar una col·lisió enviant un paquet des de PC6 a PC7 i un altre des de PC4 a PC5 simultàniament. Observa que passa.
+
+13. Guarda la simulació amb el nom `UD3A1act2-<NomCognoms>.pkt`.
+
+### Activitat 3. Visualització de trames Ethernet
+
+1. Fes `New` per crear un nou projecte.
+
+2. Afegeix 2 ordinadors (PC0 i PC1) i un Switch 2960 a l'àrea de treball. Connecta els ordinadors al Switch amb cables directes (Copper Straight-Through).
+
+3. Configura les adreces IP dels ordinadors de la següent manera: 192.168.x.10 i 192.168.x.20 amb màscara 255.255.255.0 on x, de nou, és el teu número de llista.
+
+4. Comprova la connectivitat fent ping des de PC0 a PC1 en temps real usant la comanda `ping 192.168.x.20` **compte que has de posar el número que toca enlloc de la x** en la comanda del terminal de PC0.
+
+5. Canvia al mode `Simulation` i envia un paquet des de PC0 a PC1 amb l'eina del sobre tancat (Add Simple PDU).
+
+6. Fes clic sobre el paquet abans d'enviar-lo i observa la informació que apareix a la finestra `PDU Information`. Primer observa el `OSI Model` i com s'encapsula la informació. Quines capes estan implicades a l'enviament d'aquest paquet?
+
+7. Canvia a `Outbound PDU Details` i observa la informació de la trama Ethernet. Quina és l'adreça MAC de l'ordinador d'origen i quina és la de destí? Quin tipus de protocol s'està utilitzant?
+
+8. Envia el paquet pas a pas amb el botó `Capture / Forward` i observa com es transmet la trama a través del Switch. Clica sobre el paquet quan arriba el Switch i observa la informació que apareix a la finestra `PDU Information` i observa el funcionament a la pestanya `OSI Model`. Clica sobre les capes per llegir la informació.
+
+9. Cerca a Internet informació sobre el format de les trames segons el protocol IEEE 802.3 i compara-la amb el resultat que has obtingut a la simulació. Quines diferències hi ha?
+
+10. Guarda la simulació amb el nom `UD3A1act3-<NomCognoms>.pkt`.
 
 ### :hammer_and_wrench: Resolució de problemes freqüents
 
@@ -128,8 +183,24 @@ Ara anem a descriure quines són les zones i icones que faràs servir constantme
 
 - **Problema**: Els punts de la connexió es queden en taronja durant molta estona.
 
-  **Solució**: Revisa que les adreces IP i les màscares de subxarxa estiguin correctament configurades. També comprova que els cables estiguin ben connectats i que el Switch estigui funcionant.
+  **Solució**: És normal. El Switch està analitzant la connexió (protocol STP). Espera uns 30 segons o fes clic al botó Fast Forward Time (Alt + F) a la barra inferior per accelerar el temps del simulador.
+
+- **Problema**: En fer ping apareix el missatge `Request timed out` o `Destination host unreachable`.
+
+  **Solució**: Revisa que les IP estiguin en la mateixa xarxa (192.168.1.10 i 192.168.1.20), comprova que les màscares de xarxa siguin idèntiques (255.255.255.0) i finalment, comprova que no hagis escrit malament la IP de destí a la consola de comandes.
+
+- **Problema**: No puc veure la finestra d'animació o la llista d'esdeveniments del mode simulació.
+
+  **Solució**: Revisa que hagis activat el panell de simulació. Si l'has tancat, fes clic al botó **Simulation** a la cantonada inferior dreta o restableix la vista des del menú superior **View**.
+
+- **Problema**: M'he equivocat de cable o de dispositiu i no sé com eliminar-lo.
+
+  **Solució**: Prem la tecla Del (Supr) del teclat o fes clic a la icona amb una **X vermella** de la barra d'eines superior. Després fes clic directament sobre l'element que vols esborrar.
 
 ### Què cal lliurar, on i com?
 
+Has de lliurar un document PDF amb les captures de pantalla de les tres activitats, explicant els resultats observats i responent a les qüestions plantejades. El document ha de tenir una portada amb el nom de l’alumne, el curs i la data. Assegura't que les captures de pantalla siguin clares evitant **captures a pantalla completa** i que es vegin bé els detalls de la simulació.
+
 ## Material de suport
+
+- [Manual packet-tracer-5 v1. Slideshare](https://es.slideshare.net/slideshow/manual-packettracer5-v1/28185113)
