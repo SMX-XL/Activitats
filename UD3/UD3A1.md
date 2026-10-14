@@ -114,7 +114,7 @@ Ara anem a descriure quines són les zones i icones que faràs servir constantme
     - Fes clic sobre PC0 i obre la finestra Desktop > Command Prompt.
     - Escriu la comanda ping 192.168.1.20 i prem Enter.
     - Comprova que s'obtenen respostes correctament sense pèrdua de paquets (0% loss).
-    ![Ping Result](./img/pt02.png)
+    ![Ping Result](./img/pt02.gif)
 
 5. Visualitzar el viatge dels paquets en Mode Simulació:
     - Canvia al mode Simulation a la cantonada inferior dreta.
