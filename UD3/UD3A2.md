@@ -55,22 +55,22 @@ Permès per com a eina de suport en la millora de la redacció dels informes, ce
 En cada situació, un tècnic ha escollit un cable de parells trenats. Indica si la seva elecció és adequada. Si no ho és, proposa un altre cable i justifica la teva resposta. Cables disponibles: U/UTP, F/UTP, S/FTP.
 
 1. **Situació 1**: En una aula hi ha 20 ordinadors. No hi ha fonts importants d’interferències electromagnètiques. El tècnic ha escollit S/FTP.
-    - És una bona elecció
+    - És una bona elecció?
     - Quin cable triaries?
     - Per què?
 
 2. **Situació 2**: En una fàbrica hi ha motors i maquinària que generen interferències electromagnètiques. El tècnic ha escollit U/UTP.
-    - És una bona elecció
+    - És una bona elecció?
     - Quin cable triaries?
     - Per què?
 
 3. **Situació 3**: En un petit despatx hi ha 8 ordinadors i no hi ha interferències importants. Es vol fer una instal·lació econòmica. El tècnic ha escollit U/UTP.
-    - És una bona elecció
+    - És una bona elecció?
     - Quin cable triaries?
     - Per què?
 
 4. **Situació 4**: En una zona industrial hi ha diverses màquines que poden generar interferències electromagnètiques. El tècnic ha triat F/UTP.
-    - És una bona elecció
+    - És una bona elecció?
     - Quin cable triaries?
     - Per què?
 
@@ -88,8 +88,8 @@ En cada situació, un tècnic ha escollit un cable de parells trenats. Indica si
 
 Escull el dispositiu més adequat en cada cas. Dispositius disponibles: switch, switch amb PoE, router, punt d’accés (AP), targeta de xarxa.
 
-| Situació                                                                                | Dispositiu escollit | Justificació  |
-|-----------                                                                              |-------------------- |---------------|
+| Situació                                                     | Dispositiu escollit | Justificació |
+|--------------------------------------------------------------|---------------------|--------------|
 | Connectar 20 ordinadors dins de la mateixa xarxa local.                                 |                     |               |
 | Connectar la xarxa local d’una empresa amb Internet.                                    |                     |               |
 | Connectar dispositius Wi-Fi a la xarxa local.                                           |                     |               |
