@@ -85,9 +85,9 @@ Seguiu els passos detallats a continuació per completar la pràctica:
 
 ### Què cal lliurar, on i com?
 
-- **Què:** Un document amb l'informe elaborat en parella, que inclogui les respostes organitzades en taules o seccions clares per als 3 passos.
-- **On:** El document s'ha de lliurar a la tasca corresponent al Moodle de l'assignatura. Només cal que ho lliuri un dels membres de la parella.
-- **Com:** El document ha de ser entregat en format PDF i ha d'incloure **una portada** amb els noms dels autors i el títol de l'activitat.
+- **Què:** Una presentació amb l'informe elaborat en parella, que inclogui les respostes organitzades en taules o seccions clares per als 3 passos.
+- **On:** La presentaciós'ha de lliurar a la tasca corresponent al Moodle de l'assignatura. Només cal que ho lliuri un dels membres de la parella.
+- **Com:** La presentació s'ha de lliurar en format document o enllaç a l'arxiu, assegurant que estigui correctament compartit. Preveure la possibilitat de fer una presentació oral a classe si el professor ho considera oportú, aproximadament 10-12 minuts de durada.
 
 ## Material de suport
 
