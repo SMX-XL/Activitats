@@ -76,19 +76,22 @@ Permès: Com a eina de suport per consultar conceptes teòrics (diferències ent
 
 **Condicions**: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
 
+Aquesta activitat inclou un punt d'ús obligatori de la IA per generar un esquema del Rack de Comunicacions.
+
 ## Enunciat de l'activitat
 
 L'empresa de serveis digitals TechNova està reformant la seva seu i us ha encarregat el desplegament del cablatge estructurat de la seva nova oficina a la Planta 1. La instal·lació ha de donar servei a 12 punts de treball d'alta velocitat (Gigabit Ethernet) i ha de complir estrictament la normativa vigent.
 
-Realitzareu el treball en parelles de treball seguint les 5 fases pràctiques descrites a continuació:
+Realitzareu el treball en divereses fases, algunes individuals i d'altres que haureu de fer en grup.
 
-- **Fase 1**: Dimensionament i disseny del Rack de Comunicacions
+- **Fase 1**: Dimensionament i disseny del Rack (individual).
 
     A la sala tècnica de la Planta 1 cal instal·lar un armari repartidor (Rack de 19") que albergarà l'electrònica i els panells de connexió per als 12 punts de treball existents, amb una previsió de creixement futur.
 
     1. Calcula l'espai necessari en Unitats de Rack (U), sabent que els equips que cal instal·lar inicialment són:
 
        - 1 Switch de xarxa de 24 ports (1U).
+       - 1 Router de xarxa (1U).
        - 1 Panell de patch (Patch Panel) de 24 ports RJ-45 (1U).
        - 1 Guia/passacables horitzontal amb tapa (1U).
        - 1 Panell de distribució d'alimentació / regleta de saix (PDU) (1U).
@@ -99,7 +102,38 @@ Realitzareu el treball en parelles de treball seguint les 5 fases pràctiques de
        - Suma les Unitats de Rack (U) totals ocupades pels equips inicials.
        - Aplica el coeficient del 30% d'espai lliure de reserva ($U_{\text{mínimes}} = U_{\text{actuals}} / 0,7$).
 
+    3. Dibuixa usant un programa de disseny (per exemple Visio) l'esquema del Rack de Comunicacions amb els equips inicials i l'espai reservat per a futurs creixements.
+
+    4. Pots provar a demanar que l'IA et dibuixi l'esquema. Pensa que li hauràs dir clarament el que cal incloure i en quin ordre. Inclou el prompte que has fet servir per generar el dibuix amb l'IA. Comenta quin dels dos dissenys està més ben resolt i per què.
+
+- **Fase 2**: Pressupost de la instal·lació (individual).
+
+   Cal elaborar un pressupost detallat de la instal·lació del cablatge estructurat, tenint en compte els següents elements:
+
+  - 12 preses de paret RJ-45 Cat 6 (keystones).
+  - 12 metres de cable UTP Cat 6 per a cada presa (valor mitjà).
+  - 1 Panell de patch (Patch Panel) de 24 ports RJ-45.
+  - 1 Switch de xarxa de 16 o 24 ports no gestionable.
+  - 1 Guia/passacables horitzontal amb tapa.
+  - 1 Panell de distribució d'alimentació.
+  - 12 tirants de xarxa (patchcords) de 1,5 metres de longitud per connectar els ordinadors.
+  - 12 tirants de xarxa (patchcords) de 1 metre de longitud per unir els panells de connexió amb el switch.
+  - 1 Rack de 19" de la mida calculada a la Fase 1.
+
+En aquest pressupost no cal incloure el cost de la mà d'obra, ni del router ni tampoc del SAI, ja que aquests equips ja estan disponibles a l'empresa.
+
+Indiqueu clarament la denominació de cada element, la quantitat, el preu unitari i el preu total. Finalment, calculeu el cost total de la instal·lació.
+
+- **Fase 3**: Muntatge d'un tirant de xarxa (parelles)
+
+En aquesta fase treballareu en parelles. Cada parella muntarà un tirant de xarxa amb connectors RJ-45 mascle aplicant l'estàndard de colors T568B. Un cop muntat, cada parella provarà la correcció del tirant amb un comprovador de cablejat.
+
+Feu fotografies del procés de muntatge i de la prova amb el comprovador. Amb aquestes fotografies, redacteu una petita guia explicativa del procediment de muntatge i comprovació del tirant de xarxa. Aquesta guia ha de ser clara i concisa, de manera que qualsevol persona pugui seguir els passos per muntar correctament un tirant de xarxa.
+
 ### Què cal lliurar, on i com?
+
+Memòria descriptiva que inclogui les tres fases de l'activitat, incloent els diagrames, el pressupost i la guia de muntatge del tirant de xarxa.
 
 ## Material de suport
 
+- Material propi. [UD5. Instal·lació física de la xarxa local](smx-xl.github.io/Materials/UD5).
