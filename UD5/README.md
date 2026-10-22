@@ -22,8 +22,11 @@ La durada prevista de l'activitat és 4 hores a classe.
 
 ### Competències treballades
 
-a) Competència 1
-b) Competència 2
+d) Replantejar el cablejat i l’electrònica de xarxes locals en petits entorns i la seva connexió amb xarxes d’àrea extensa, canalitzant a un nivell superior els supòsits que així ho requereixin.
+
+e) Instal·lar i configurar xarxes locals cablejades, sense fil o mixtes, i la seva connexió a xarxes públiques, assegurant-ne el funcionament en condicions de qualitat i seguretat.
+
+g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions, per comprovar i ajustar el seu funcionament.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
