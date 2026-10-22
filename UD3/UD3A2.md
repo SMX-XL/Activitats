@@ -90,11 +90,11 @@ Escull el dispositiu més adequat en cada cas. Dispositius disponibles: switch, 
 
 | Situació                                                     | Dispositiu escollit | Justificació |
 |--------------------------------------------------------------|---------------------|--------------|
-| Connectar 20 ordinadors dins de la mateixa xarxa local.                                 |                     |               |
-| Connectar la xarxa local d’una empresa amb Internet.                                    |                     |               |
-| Connectar dispositius Wi-Fi a la xarxa local.                                           |                     |               |
-| Connectar a la xarxa una càmera IP situada al sostre.                                   |                     |               |
-| Permetre que un ordinador disposi de connexió a la xarxa.                               |                     |               |
+| Connectar 20 ordinadors dins de la mateixa xarxa local.      |                     |              |
+| Connectar la xarxa local d’una empresa amb Internet.         |                     |              |
+| Connectar dispositius Wi-Fi a la xarxa local.                |                     |              |
+| Connectar a la xarxa una càmera IP situada al sostre.        |                     |              |
+| Permetre que un ordinador disposi de connexió a la xarxa.    |                     |              |
 
 ### Exercici 3. Detecta els errors
 
@@ -144,3 +144,5 @@ El teu company de feina ha fet una proposta de cablejat i equipament per a una x
 ## Material de suport
 
 - [Apunts UD3. Elements de la xarxa local](https://smx-xl.github.io/materials/UD3/)
+
+- W. Escalona. [*UTP vs FTP- STP -S/FTP: Guía Definitiva de Blindaje en Cables de Red*. CH Retail. Jul. 2025](https://gabineteyrack.pe/utp-vs-ftp-stp-s-ftp-guia-definitiva-de-blindaje-en-cables-de-red/)
