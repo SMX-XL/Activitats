@@ -1,4 +1,4 @@
-# UD5. Instal·lació física de la xarxa: cablatge estructurat
+# UD5.A1. Dissenyi i pressupost d'una xarxa local cablejada
 
 ## Presentació de l'activitat
 
@@ -31,38 +31,21 @@ g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals
 
 RA2. Desplega el cablejat d'una xarxa local interpretant-ne especificacions i aplicant-hi tècniques de muntatge.
 
-- Reconeix els principis funcionals de les xarxes locals.
-- Diferencia els mitjans de transmissió.
 - Reconeix els detalls del cablejat de la instal·lació i el seu desplegament (categoria del cablejat, espais pels quals discorre, suport per a les canalitzacions, entre altres).
-- Munta els armaris de comunicacions i els seus accessoris.
-- Munta i estableix connexió les preses d'usuari i panells de connexions.
-- Prova les línies de comunicació entre les preses d'usuari i panells de connexions.
-- Etiqueta els cables i preses d'usuari.
-- Treballa amb la qualitat i seguretat requerides.
-
-RA3. Interconnecta equips en xarxes locals cablejades descrivint estàndards de cablejat i aplicant tècniques de muntatge de connectors.
-
-- Interpreta el pla de muntatge lògic de la xarxa.
-- Munta connectors sobre cables (coure i fibra) de xarxa.
-- Munta els equips de commutació en els armaris de comunicacions.
-- Connecta els equips de commutació als panells de connexions.
-- Verifica la connectivitat de la instal·lació.
-- Treballa amb la qualitat requerida.
+- Selecciona les canalitzacions i tubs.
+- Reconeix la distribució i l'organització dels armaris de comunicacions i els seus accessoris.
+- Treballa amb la qualitat i seguretat requerides en la planificació.
 
 ### Continguts
 
 - Cablatge estructurat: concepte, objectius, subsistemes (horitzontal i vertical) i normatives d'aplicació (ISO/IEC 11801, EN 50173, ANSI/TIA-568).
 - Categories i classes de cablejat: parell trenat UTP/FTP Cat 6 / Cat 6A, velocitats i amplada de banda.
 - Armaris i repartidors de comunicacions: Racks de 19", unitats de rack (U), panells de patch (patch panels), guies de cablejat i sais.
-- Elements d'interconnexió i preses: connectors RJ-45 mascle, preses femella (keystones autocrimpables o punch-down), rosetes de paret.
-- Tècniques de muntatge: pelat de cable, ordenació segons estàndard T568B, grimpat amb crimpadora i fixació de keystones.
-- Comprovació i verificació: ús del provador/tester de cablejat RJ-45, identificació de parells enllaçats, oberts, encurtcircuits o creuats.
 
 ### Capacitats clau treballades
 
 - Autonomia
 - Organització del treball
-- Treball en equip
 - Innovació
 - Resolució de problemes
 - Responsabilitat
