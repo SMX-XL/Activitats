@@ -1,4 +1,4 @@
-# UD3. Elements de la xarxa local
+# UD5. Instal·lació física de la xarxa: cablatge estructurat
 
 ## Presentació de l'activitat
 
@@ -6,7 +6,7 @@ Hola a tots i totes! Us heu trobat mai amb una xarxa informàtica que sembla un 
 
 Per evitar aquest caos, els tècnics i tècniques en Sistemes Microinformàtics i Xarxes (SMX) utilitzem el cablatge estructurat: un mètode organitzat, normalitzat i professional per dissenyar i desplegar la infraestructura física d'una xarxa local.
 
-En aquesta pràctica us posareu la llanterna al cap, agafareu la crimpadora i el provador de cables, i actuareu com a equip de tècnics encarregats d'equipar una nova oficina corporativa (TechNova). Aprendreu a dissenyar el rack de comunicacions, muntar cables de xarxa amb el codi de colors oficial T568B, instal·lar preses de paret (keystones), etiquetar la instal·lació seguint la norma i certificar que les connexions funcionen a la perfecció. ÉS hora de posar-hi mans a la obra!
+En aquesta pràctica us posareu a planificar el desplegament de la xarxa. Abans de començar a tirar cables, instal·lar rosetes i muntar equips, haureu de calcular l'espai necessari per a l'armari de comunicacions (Rack), dissenyar el seu esquema.
 
 ### Durada de l'activitat
 
@@ -14,11 +14,10 @@ La durada prevista de l'activitat és 4 hores a classe.
 
 ### Objectius específics de l'activitat
 
-- Dimensionar i organitzar els equips d'un armari de comunicacions (Rack de 19") calculant la seva alçada en unitats de rack (U) i respectant la reserva d'espai del 30% per a futures ampliacions.
-- Connectoritzar de forma precisa un cable de xarxa directe UTP Cat 6 amb connectors RJ-45 mascle aplicant l'estàndard de colors T568B.
-- Muntar una presa de xarxa femella d'usuari (keystone RJ-45) i la seva connexió corresponent al panell de connexions (patch panel).
-- Validar la continuïtat i el correcte patillatge de la instal·lació utilitzant un tester o mesurador de cablejat.
-- Diagnosticar i resoldre avaries físiques habituals en les línies de comunicació.
+- Representar en un mapa físic l'espai, els punts de xarxa i el recorregut del cablejat a partir d'un cas pràctic.
+- Dimensionar un armari de comunicacions de 19" en unitats de rack (U), reservant com a mínim un 30% de l'espai per a ampliacions.
+- Dibuixar la distribució dels equips i de l'espai de reserva dins del rack.
+- Calcular i pressupostar el material passiu necessari per a la instal·lació, sense incloure l'electrònica de xarxa.
 
 ### Competències treballades
 
@@ -76,64 +75,61 @@ Permès: Com a eina de suport per consultar conceptes teòrics (diferències ent
 
 **Condicions**: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
 
-Aquesta activitat inclou un punt d'ús obligatori de la IA per generar un esquema del Rack de Comunicacions.
-
 ## Enunciat de l'activitat
 
-L'empresa de serveis digitals TechNova està reformant la seva seu i us ha encarregat el desplegament del cablatge estructurat de la seva nova oficina a la Planta 1. La instal·lació ha de donar servei a 12 punts de treball d'alta velocitat (Gigabit Ethernet) i ha de complir estrictament la normativa vigent.
+L'empresa TechNova obrirà una oficina nova i us encarrega el disseny de la seva xarxa local cablejada. Heu de preparar una proposta tècnica abans que comencin les obres. Aquesta activitat és de planificació: es resol amb plànols, càlculs i eines digitals o de dibuix.
 
-Realitzareu el treball en divereses fases, algunes individuals i d'altres que haureu de fer en grup.
+L'oficina és una sala diàfana rectangular de 12 m d'est a oest i 8 m de sud a nord, amb una porta d'accés a la paret sud. Hi haurà sis taules de treball, cadascuna amb una presa doble RJ-45 Cat 6 per donar servei a un ordinador i a un telèfon IP; en total calen 12 connexions. Heu de proposar una distribució adequada de les taules, les preses i el rack dins l'espai disponible. La ubicació dels elements no està predeterminada: decidiu-la tenint en compte l'accés a la sala, la comoditat dels llocs de treball, la seguretat i l'organització del cablejat.
 
-- **Fase 1**: Dimensionament i disseny del Rack (individual).
+Dissenyeu també el recorregut de les canaletes des del rack fins a les preses. Cada port RJ-45 tindrà un cable dedicat des del rack fins a la presa corresponent (topologia en estrella). Calculeu les longituds a partir del vostre disseny, indicant els trams i els criteris de mesura. Afegiu un marge del 15% al cable de xarxa per absorbir desviacions i reserva de servei; arrodoniu la compra a metres sencers.
 
-    A la sala tècnica de la Planta 1 cal instal·lar un armari repartidor (Rack de 19") que albergarà l'electrònica i els panells de connexió per als 12 punts de treball existents, amb una previsió de creixement futur.
+### Fase 1. Mapa físic de la instal·lació
 
-    1. Calcula l'espai necessari en Unitats de Rack (U), sabent que els equips que cal instal·lar inicialment són:
+Dissenyeu una distribució adequada i dibuixeu el mapa físic de l'oficina a escala. Podeu fer-lo amb una aplicació de disseny com Visio o similars. Justifiqueu breument les decisions de distribució i incloeu al plànol:
 
-       - 1 Switch de xarxa de 24 ports (1U).
-       - 1 Router de xarxa (1U).
-       - 1 Panell de patch (Patch Panel) de 24 ports RJ-45 (1U).
-       - 1 Guia/passacables horitzontal amb tapa (1U).
-       - 1 Panell de distribució d'alimentació / regleta de saix (PDU) (1U).
-       - 1 Sistema d'Alimentació Ininterrompuda (SAI) en format rack (2U).
+- Les dimensions de la sala, la porta, la ubicació de les sis taules i la ubicació proposada del rack.
+- Les 12 connexions de xarxa, identificades amb codis (per exemple, P01-P12) i agrupades en sis preses dobles.
+- El recorregut proposat de les canaletes i dels cables, amb les distàncies de cada tram indicades.
+- Una llegenda clara que diferenciï les preses, el rack i les canalitzacions.
 
-    2. Aplica la reserva del 30% per a futurs creixements:
+### Fase 2. Dimensionament i esquema del rack
 
-       - Suma les Unitats de Rack (U) totals ocupades pels equips inicials.
-       - Aplica el coeficient del 30% d'espai lliure de reserva ($U_{\text{mínimes}} = U_{\text{actuals}} / 0,7$).
+Al rack de 19" s'hi preveu instal·lar aquests elements:
 
-    3. Dibuixa usant un programa de disseny (per exemple Visio) l'esquema del Rack de Comunicacions amb els equips inicials i l'espai reservat per a futurs creixements.
+- 1 switch de 24 ports (1U).
+- 1 router (1U).
+- 1 panell de connexions de 24 ports RJ-45 (1U).
+- 1 guia/passacables horitzontal (1U).
+- 1 panell de distribució d'alimentació (PDU) (1U).
+- 1 sistema d'alimentació ininterrompuda (SAI) en format rack (2U).
 
-    4. Pots provar a demanar que l'IA et dibuixi l'esquema. Pensa que li hauràs dir clarament el que cal incloure i en quin ordre. Inclou el prompte que has fet servir per generar el dibuix amb l'IA. Comenta quin dels dos dissenys està més ben resolt i per què.
+Calculeu les unitats de rack ocupades i la capacitat mínima total per mantenir un 30% d'espai lliure per a ampliacions. Feu servir la fórmula $U_{\\text{mínimes}} = U_{\\text{ocupades}} / 0,7$ i trieu una mida comercial de rack igual o superior al resultat.
 
-- **Fase 2**: Pressupost de la instal·lació (individual).
+Dibuixeu la vista frontal del rack i indiqueu l'ordre dels elements, l'alçada en U de cadascun i les U que queden lliures. L'esquema ha de mostrar també els equips electrònics, encara que no s'hagin d'incloure al pressupost.
 
-   Cal elaborar un pressupost detallat de la instal·lació del cablatge estructurat, tenint en compte els següents elements:
+### Fase 3. Pressupost del material
 
-  - 12 preses de paret RJ-45 Cat 6 (keystones).
-  - 12 metres de cable UTP Cat 6 per a cada presa (valor mitjà).
-  - 1 Panell de patch (Patch Panel) de 24 ports RJ-45.
-  - 1 Switch de xarxa de 16 o 24 ports no gestionable.
-  - 1 Guia/passacables horitzontal amb tapa.
-  - 1 Panell de distribució d'alimentació.
-  - 12 tirants de xarxa (patchcords) de 1,5 metres de longitud per connectar els ordinadors.
-  - 12 tirants de xarxa (patchcords) de 1 metre de longitud per unir els panells de connexió amb el switch.
-  - 1 Rack de 19" de la mida calculada a la Fase 1.
+Elaboreu un pressupost del material passiu i dels elements físics de la instal·lació. Calculeu les quantitats a partir del mapa i de l'esquema del rack. Incloeu, com a mínim:
 
-En aquest pressupost no cal incloure el cost de la mà d'obra, ni del router ni tampoc del SAI, ja que aquests equips ja estan disponibles a l'empresa.
+- Cable UTP Cat 6 i canaleta per als recorreguts dibuixats, amb el marge de reserva indicat.
+- 12 connectors femella RJ-45 Cat 6 (keystones) i 6 marcs o caixes dobles per a les preses.
+- 1 panell de connexions de 24 ports RJ-45.
+- 12 patchcords d'1 m per al rack i 12 patchcords d'1,5 m per als llocs de treball.
+- 1 rack de 19" de la mida triada i 1 guia/passacables horitzontal.
+- 1 PDU per al rack.
 
-Indiqueu clarament la denominació de cada element, la quantitat, el preu unitari i el preu total. Finalment, calculeu el cost total de la instal·lació.
-
-- **Fase 3**: Muntatge d'un tirant de xarxa (parelles)
-
-En aquesta fase treballareu en parelles. Cada parella muntarà un tirant de xarxa amb connectors RJ-45 mascle aplicant l'estàndard de colors T568B. Un cop muntat, cada parella provarà la correcció del tirant amb un comprovador de cablejat.
-
-Feu fotografies del procés de muntatge i de la prova amb el comprovador. Amb aquestes fotografies, redacteu una petita guia explicativa del procediment de muntatge i comprovació del tirant de xarxa. Aquesta guia ha de ser clara i concisa, de manera que qualsevol persona pugui seguir els passos per muntar correctament un tirant de xarxa.
+**No inclogueu l'electrònica de xarxa** (switch, router o punts d'accés), el SAI ni la mà d'obra. Per a cada material, indiqueu la descripció, la quantitat, el preu unitari, l'import i l'enllaç o la font consultada. Calculeu el subtotal, l'IVA i el total. Si algun element no té un preu verificable, indiqueu el criteri emprat per estimar-lo.
 
 ### Què cal lliurar, on i com?
 
-Memòria descriptiva que inclogui les tres fases de l'activitat, incloent els diagrames, el pressupost i la guia de muntatge del tirant de xarxa.
+Lliureu individualment una memòria en PDF que contingui:
+
+- El mapa físic de la instal·lació, a escala i amb llegenda.
+- Els càlculs del dimensionament del rack i el seu esquema frontal.
+- El pressupost desglossat del material, amb fonts de preus i total amb IVA.
+
+Tota l'activitat es pot completar sense accedir al taller ni utilitzar material físic.
 
 ## Material de suport
 
-- Material propi. [UD5. Instal·lació física de la xarxa local](smx-xl.github.io/Materials/UD5).
+- Material propi. [UD5. Instal·lació física de la xarxa local](https://smx-xl.github.io/Materials/UD5).
