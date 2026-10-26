@@ -1,4 +1,4 @@
-# UD3. Elements de la xarxa local
+# UD5. Instal·lació física de la xarxa: cablatge estructurat
 
 ## Presentació de l'activitat
 
@@ -6,7 +6,7 @@ Hola a tots i totes! Us heu trobat mai amb una xarxa informàtica que sembla un 
 
 Per evitar aquest caos, els tècnics i tècniques en Sistemes Microinformàtics i Xarxes (SMX) utilitzem el cablatge estructurat: un mètode organitzat, normalitzat i professional per dissenyar i desplegar la infraestructura física d'una xarxa local.
 
-En aquesta pràctica us posareu la llanterna al cap, agafareu la crimpadora i el provador de cables, i actuareu com a equip de tècnics encarregats d'equipar una nova oficina corporativa (TechNova). Aprendreu a dissenyar el rack de comunicacions, muntar cables de xarxa amb el codi de colors oficial T568B, instal·lar preses de paret (keystones), etiquetar la instal·lació seguint la norma i certificar que les connexions funcionen a la perfecció. ÉS hora de posar-hi mans a la obra!
+En aquesta pràctica us posareu la llanterna al cap, agafareu la crimpadora i el provador de cables, i actuareu com a equip de tècnics encarregats d'equipar una nova oficina corporativa (TechNova). Aprendreu a dissenyar el rack de comunicacions dimensionant correctament l'equipament necessari. També dibuixaràs un mapa físic de la xarxa i un esquema del rack de comunicacions.
 
 ### Durada de l'activitat
 
@@ -15,18 +15,12 @@ La durada prevista de l'activitat és 4 hores a classe.
 ### Objectius específics de l'activitat
 
 - Dimensionar i organitzar els equips d'un armari de comunicacions (Rack de 19") calculant la seva alçada en unitats de rack (U) i respectant la reserva d'espai del 30% per a futures ampliacions.
-- Connectoritzar de forma precisa un cable de xarxa directe UTP Cat 6 amb connectors RJ-45 mascle aplicant l'estàndard de colors T568B.
-- Muntar una presa de xarxa femella d'usuari (keystone RJ-45) i la seva connexió corresponent al panell de connexions (patch panel).
-- Validar la continuïtat i el correcte patillatge de la instal·lació utilitzant un tester o mesurador de cablejat.
-- Diagnosticar i resoldre avaries físiques habituals en les línies de comunicació.
+
+- Dimensionar i pressupostar l'equipament necessari per a la instal·lació del cablatge estructurat d'una xarxa local.
 
 ### Competències treballades
 
 d) Replantejar el cablejat i l’electrònica de xarxes locals en petits entorns i la seva connexió amb xarxes d’àrea extensa, canalitzant a un nivell superior els supòsits que així ho requereixin.
-
-e) Instal·lar i configurar xarxes locals cablejades, sense fil o mixtes, i la seva connexió a xarxes públiques, assegurant-ne el funcionament en condicions de qualitat i seguretat.
-
-g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions, per comprovar i ajustar el seu funcionament.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
@@ -35,11 +29,6 @@ RA2. Desplega el cablejat d'una xarxa local interpretant-ne especificacions i ap
 - Reconeix els principis funcionals de les xarxes locals.
 - Diferencia els mitjans de transmissió.
 - Reconeix els detalls del cablejat de la instal·lació i el seu desplegament (categoria del cablejat, espais pels quals discorre, suport per a les canalitzacions, entre altres).
-- Munta els armaris de comunicacions i els seus accessoris.
-- Munta i estableix connexió les preses d'usuari i panells de connexions.
-- Prova les línies de comunicació entre les preses d'usuari i panells de connexions.
-- Etiqueta els cables i preses d'usuari.
-- Treballa amb la qualitat i seguretat requerides.
 
 RA3. Interconnecta equips en xarxes locals cablejades descrivint estàndards de cablejat i aplicant tècniques de muntatge de connectors.
 
@@ -63,8 +52,6 @@ RA3. Interconnecta equips en xarxes locals cablejades descrivint estàndards de 
 
 - Autonomia
 - Organització del treball
-- Treball en equip
-- Innovació
 - Resolució de problemes
 - Responsabilitat
 
@@ -76,15 +63,19 @@ Permès: Com a eina de suport per consultar conceptes teòrics (diferències ent
 
 **Condicions**: Cal processar, entendre i validar sempre els resultats rebuts. Està totalment prohibit copiar l'enunciat d'un exercici directament al xat de la IA i enganxar la resposta generada per al lliurament final sense treball propi ni anàlisi crítica.
 
-Aquesta activitat inclou un punt d'ús obligatori de la IA per generar un esquema del Rack de Comunicacions.
-
 ## Enunciat de l'activitat
 
 L'empresa de serveis digitals TechNova està reformant la seva seu i us ha encarregat el desplegament del cablatge estructurat de la seva nova oficina a la Planta 1. La instal·lació ha de donar servei a 12 punts de treball d'alta velocitat (Gigabit Ethernet) i ha de complir estrictament la normativa vigent.
 
 Realitzareu el treball en divereses fases, algunes individuals i d'altres que haureu de fer en grup.
 
-- **Fase 1**: Dimensionament i disseny del Rack (individual).
+- **Fase 1**: Disseny del cablatge estructurat.
+
+   1. Dibuixa un esquema de la xarxa local de la Planta 1, indicant la ubicació dels 12 punts de treball i la ubicació de l'armari de comunicacions (Rack de 19") a la sala tècnica. Utilitza un programa de disseny (per exemple Visio) per fer el plànol. És important que representis adequadament les canalitzacions i els recorreguts dels cables, així com la ubicació de les preses de paret RJ-45 Cat 6 (keystones) i els panells de connexió.
+
+   2. Indica quin sistema de canalització has triat (safata, canaleta o una combinació d'ambdós) i justifica la teva elecció. Explica també per on distribueixes els cables justificant l'elecció tenin en compte les característiques del lloc.
+
+- **Fase 2**: Dimensionament i disseny del Rack.
 
     A la sala tècnica de la Planta 1 cal instal·lar un armari repartidor (Rack de 19") que albergarà l'electrònica i els panells de connexió per als 12 punts de treball existents, amb una previsió de creixement futur.
 
@@ -104,9 +95,7 @@ Realitzareu el treball en divereses fases, algunes individuals i d'altres que ha
 
     3. Dibuixa usant un programa de disseny (per exemple Visio) l'esquema del Rack de Comunicacions amb els equips inicials i l'espai reservat per a futurs creixements.
 
-    4. Pots provar a demanar que l'IA et dibuixi l'esquema. Pensa que li hauràs dir clarament el que cal incloure i en quin ordre. Inclou el prompte que has fet servir per generar el dibuix amb l'IA. Comenta quin dels dos dissenys està més ben resolt i per què.
-
-- **Fase 2**: Pressupost de la instal·lació (individual).
+- **Fase 3**: Pressupost de la instal·lació.
 
    Cal elaborar un pressupost detallat de la instal·lació del cablatge estructurat, tenint en compte els següents elements:
 
@@ -124,16 +113,10 @@ En aquest pressupost no cal incloure el cost de la mà d'obra, ni del router ni 
 
 Indiqueu clarament la denominació de cada element, la quantitat, el preu unitari i el preu total. Finalment, calculeu el cost total de la instal·lació.
 
-- **Fase 3**: Muntatge d'un tirant de xarxa (parelles)
-
-En aquesta fase treballareu en parelles. Cada parella muntarà un tirant de xarxa amb connectors RJ-45 mascle aplicant l'estàndard de colors T568B. Un cop muntat, cada parella provarà la correcció del tirant amb un comprovador de cablejat.
-
-Feu fotografies del procés de muntatge i de la prova amb el comprovador. Amb aquestes fotografies, redacteu una petita guia explicativa del procediment de muntatge i comprovació del tirant de xarxa. Aquesta guia ha de ser clara i concisa, de manera que qualsevol persona pugui seguir els passos per muntar correctament un tirant de xarxa.
-
 ### Què cal lliurar, on i com?
 
 Memòria descriptiva que inclogui les tres fases de l'activitat, incloent els diagrames, el pressupost i la guia de muntatge del tirant de xarxa.
 
 ## Material de suport
 
-- Material propi. [UD5. Instal·lació física de la xarxa local](smx-xl.github.io/Materials/UD5).
+- Material propi. [UD5. Instal·lació física de la xarxa local](smx-xl.github.io/Materials/UD5)
