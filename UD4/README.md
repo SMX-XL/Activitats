@@ -78,9 +78,8 @@ Heu rebut l'encàrrec de renovar la xarxa d'una nau industrial a un polígon de 
 
 1. Instal·lar un armari rack suspès a 2,5 metres d'alçada sobre una escala tipus tisorada.
 2. Passar 200 metres de cable UTP per canaletes superiors i pelar/crimpar els connectors.
-3. Instal·lar un armari rack suspès a 2,5 metres d'alçada sobre una escala tipus tisorada.
-4. Realitzar la construcció de fuetons U/UTP amb connectors RJ-45 utilitzant eines de tall i pelat.
-5. Retirar 4 commutadors (switches) antics fora d'ús i el cablejat de coure substituït.
+3. Realitzar la construcció de fuetons U/UTP amb connectors RJ-45 utilitzant eines de tall i pelat.
+4. Retirar 4 commutadors (switches) antics fora d'ús i el cablejat de coure substituït.
 
 ### Instruccions de l'activitat
 
@@ -88,7 +87,7 @@ Seguiu els passos detallats a continuació per completar la pràctica:
 
 1. **Pas 1: Identificació de riscos laborals**
 
-    Analitzeu les 4 primeres tasques de l'escenari i llisteu almenys 4 riscos laborals específics als quals us enfrontareu (per exemple: caigudes des d'alçada, talls, descàrregues elèctriques, exposició a fonts òptiques, postures forçades). Per a cada risc, indiqueu en quina tasca concreta pot produir-se.
+    Analitzeu les 3 primeres tasques de l'escenari i llisteu almenys 4 riscos laborals específics als quals us enfrontareu (per exemple: caigudes des d'alçada, talls, descàrregues elèctriques, exposició a fonts òptiques, postures forçades). Per a cada risc, indiqueu en quina tasca concreta pot produir-se.
 
 2. **Pas 2: Mesures de prevenció i selecció d'EPIs**
 
