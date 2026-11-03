@@ -107,7 +107,7 @@ Seguiu els passos detallats a continuació per completar la pràctica:
 - **Què:** Una presentació amb l'informe elaborat en parella, que inclogui les respostes per als 3 passos. El format de la presentació ha de ser el següent:
 
   - **Portada:** Nom de l'activitat, noms dels membres de la parella i data.
-  - **Fase 1:** explicació dels riscos laborals identificats a les 4 primeres tasques de l'escenari.
+  - **Fase 1:** explicació dels riscos laborals identificats a les 3 primeres tasques de l'escenari.
   - **Fase 2:** mesures de prevenció i selecció d'EPIs per a cada risc identificat.
   - **Fase 3:** accions relatives a la gestió de residus.
 
