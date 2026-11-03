@@ -1,4 +1,8 @@
+<<<<<<< HEAD:UD5/README.md
 # UD5.A1. Dissenyi i pressupost d'una xarxa local cablejada
+=======
+# UD5. Instal·lació física de la xarxa: cablatge estructurat
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ## Presentació de l'activitat
 
@@ -6,7 +10,11 @@ Hola a tots i totes! Us heu trobat mai amb una xarxa informàtica que sembla un 
 
 Per evitar aquest caos, els tècnics i tècniques en Sistemes Microinformàtics i Xarxes (SMX) utilitzem el cablatge estructurat: un mètode organitzat, normalitzat i professional per dissenyar i desplegar la infraestructura física d'una xarxa local.
 
+<<<<<<< HEAD:UD5/README.md
 En aquesta pràctica us posareu a planificar el desplegament de la xarxa. Abans de començar a tirar cables, instal·lar rosetes i muntar equips, haureu de calcular l'espai necessari per a l'armari de comunicacions (Rack), dissenyar el seu esquema.
+=======
+En aquesta pràctica us posareu la llanterna al cap, agafareu la crimpadora i el provador de cables, i actuareu com a equip de tècnics encarregats d'equipar una nova oficina corporativa (TechNova). Aprendreu a dissenyar el rack de comunicacions dimensionant correctament l'equipament necessari. També dibuixaràs un mapa físic de la xarxa i un esquema del rack de comunicacions.
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ### Durada de l'activitat
 
@@ -14,27 +22,41 @@ La durada prevista de l'activitat és 4 hores a classe.
 
 ### Objectius específics de l'activitat
 
+<<<<<<< HEAD:UD5/README.md
 - Representar en un mapa físic l'espai, els punts de xarxa i el recorregut del cablejat a partir d'un cas pràctic.
 - Dimensionar un armari de comunicacions de 19" en unitats de rack (U), reservant com a mínim un 30% de l'espai per a ampliacions.
 - Dibuixar la distribució dels equips i de l'espai de reserva dins del rack.
 - Calcular i pressupostar el material passiu necessari per a la instal·lació, sense incloure l'electrònica de xarxa.
+=======
+- Dimensionar i organitzar els equips d'un armari de comunicacions (Rack de 19") calculant la seva alçada en unitats de rack (U) i respectant la reserva d'espai del 30% per a futures ampliacions.
+
+- Dimensionar i pressupostar l'equipament necessari per a la instal·lació del cablatge estructurat d'una xarxa local.
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ### Competències treballades
 
 d) Replantejar el cablejat i l’electrònica de xarxes locals en petits entorns i la seva connexió amb xarxes d’àrea extensa, canalitzant a un nivell superior els supòsits que així ho requereixin.
-
-e) Instal·lar i configurar xarxes locals cablejades, sense fil o mixtes, i la seva connexió a xarxes públiques, assegurant-ne el funcionament en condicions de qualitat i seguretat.
-
-g) Realitzar les proves funcionals en sistemes microinformàtics i xarxes locals, localitzant i diagnosticant disfuncions, per comprovar i ajustar el seu funcionament.
 
 ### Resultats d'aprenentatge i criteris d'avaluació
 
 RA2. Desplega el cablejat d'una xarxa local interpretant-ne especificacions i aplicant-hi tècniques de muntatge.
 
 - Reconeix els detalls del cablejat de la instal·lació i el seu desplegament (categoria del cablejat, espais pels quals discorre, suport per a les canalitzacions, entre altres).
+<<<<<<< HEAD:UD5/README.md
 - Selecciona les canalitzacions i tubs.
 - Reconeix la distribució i l'organització dels armaris de comunicacions i els seus accessoris.
 - Treballa amb la qualitat i seguretat requerides en la planificació.
+=======
+
+RA3. Interconnecta equips en xarxes locals cablejades descrivint estàndards de cablejat i aplicant tècniques de muntatge de connectors.
+
+- Interpreta el pla de muntatge lògic de la xarxa.
+- Munta connectors sobre cables (coure i fibra) de xarxa.
+- Munta els equips de commutació en els armaris de comunicacions.
+- Connecta els equips de commutació als panells de connexions.
+- Verifica la connectivitat de la instal·lació.
+- Treballa amb la qualitat requerida.
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ### Continguts
 
@@ -46,7 +68,10 @@ RA2. Desplega el cablejat d'una xarxa local interpretant-ne especificacions i ap
 
 - Autonomia
 - Organització del treball
+<<<<<<< HEAD:UD5/README.md
 - Innovació
+=======
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 - Resolució de problemes
 - Responsabilitat
 
@@ -64,7 +89,17 @@ L'empresa TechNova obrirà una oficina nova i us encarrega el disseny de la seva
 
 L'oficina és una sala diàfana rectangular de 12 m d'est a oest i 8 m de sud a nord, amb una porta d'accés a la paret sud. Hi haurà sis taules de treball, cadascuna amb una presa doble RJ-45 Cat 6 per donar servei a un ordinador i a un telèfon IP; en total calen 12 connexions. Heu de proposar una distribució adequada de les taules, les preses i el rack dins l'espai disponible. La ubicació dels elements no està predeterminada: decidiu-la tenint en compte l'accés a la sala, la comoditat dels llocs de treball, la seguretat i l'organització del cablejat.
 
+<<<<<<< HEAD:UD5/README.md
 Dissenyeu també el recorregut de les canaletes des del rack fins a les preses. Cada port RJ-45 tindrà un cable dedicat des del rack fins a la presa corresponent (topologia en estrella). Calculeu les longituds a partir del vostre disseny, indicant els trams i els criteris de mesura. Afegiu un marge del 15% al cable de xarxa per absorbir desviacions i reserva de servei; arrodoniu la compra a metres sencers.
+=======
+- **Fase 1**: Disseny del cablatge estructurat.
+
+   1. Dibuixa un esquema de la xarxa local de la Planta 1, indicant la ubicació dels 12 punts de treball i la ubicació de l'armari de comunicacions (Rack de 19") a la sala tècnica. Utilitza un programa de disseny (per exemple Visio) per fer el plànol. És important que representis adequadament les canalitzacions i els recorreguts dels cables, així com la ubicació de les preses de paret RJ-45 Cat 6 (keystones) i els panells de connexió.
+
+   2. Indica quin sistema de canalització has triat (safata, canaleta o una combinació d'ambdós) i justifica la teva elecció. Explica també per on distribueixes els cables justificant l'elecció tenin en compte les característiques del lloc.
+
+- **Fase 2**: Dimensionament i disseny del Rack.
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ### Fase 1. Mapa físic de la instal·lació
 
@@ -86,9 +121,13 @@ Al rack de 19" s'hi preveu instal·lar aquests elements:
 - 1 panell de distribució d'alimentació (PDU) (1U).
 - 1 sistema d'alimentació ininterrompuda (SAI) en format rack (2U).
 
+<<<<<<< HEAD:UD5/README.md
 Calculeu les unitats de rack ocupades i la capacitat mínima total per mantenir un 30% d'espai lliure per a ampliacions. Feu servir la fórmula $U_{\\text{mínimes}} = U_{\\text{ocupades}} / 0,7$ i trieu una mida comercial de rack igual o superior al resultat.
 
 Dibuixeu la vista frontal del rack i indiqueu l'ordre dels elements, l'alçada en U de cadascun i les U que queden lliures. L'esquema ha de mostrar també els equips electrònics, encara que no s'hagin d'incloure al pressupost.
+=======
+- **Fase 3**: Pressupost de la instal·lació.
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ### Fase 3. Pressupost del material
 
@@ -101,7 +140,11 @@ Elaboreu un pressupost del material passiu i dels elements físics de la instal�
 - 1 rack de 19" de la mida triada i 1 guia/passacables horitzontal.
 - 1 PDU per al rack.
 
+<<<<<<< HEAD:UD5/README.md
 **No inclogueu l'electrònica de xarxa** (switch, router o punts d'accés), el SAI ni la mà d'obra. Per a cada material, indiqueu la descripció, la quantitat, el preu unitari, l'import i l'enllaç o la font consultada. Calculeu el subtotal, l'IVA i el total. Si algun element no té un preu verificable, indiqueu el criteri emprat per estimar-lo.
+=======
+Indiqueu clarament la denominació de cada element, la quantitat, el preu unitari i el preu total. Finalment, calculeu el cost total de la instal·lació.
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
 
 ### Què cal lliurar, on i com?
 
@@ -115,4 +158,8 @@ Tota l'activitat es pot completar sense accedir al taller ni utilitzar material 
 
 ## Material de suport
 
+<<<<<<< HEAD:UD5/README.md
 - Material propi. [UD5. Instal·lació física de la xarxa local](https://smx-xl.github.io/Materials/UD5).
+=======
+- Material propi. [UD5. Instal·lació física de la xarxa local](smx-xl.github.io/Materials/UD5)
+>>>>>>> c56361c456e68a5e7855bf5fa8fbb4647773311c:UD5/UD5Activitat1.md
