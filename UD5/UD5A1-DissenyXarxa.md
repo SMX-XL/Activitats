@@ -10,7 +10,7 @@ En aquesta pràctica us posareu a planificar el desplegament de la xarxa. Abans 
 
 ### Durada de l'activitat
 
-La durada prevista de l'activitat és 4 hores a classe.
+La durada prevista de l'activitat és 6 hores a classe.
 
 ### Objectius específics de l'activitat
 
